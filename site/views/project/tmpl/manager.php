@@ -35,7 +35,7 @@ echo $layout->render($this->layoutData);
                                      alt="<?php echo $this->item->title; ?>" width="<?php echo $this->imageWidth; ?>"
                                      height="<?php echo $this->imageHeight; ?>">
                             <?php } else { ?>
-                                <img src="<?php echo $this->imageFolder . "/" . $this->item->image; ?>"
+                                <img src="<?php echo $this->imageFolder , "/" , $this->item->image; ?>"
                                      alt="<?php echo $this->item->title; ?>" width="<?php echo $this->imageWidth; ?>"
                                      height="<?php echo $this->imageHeight; ?>">
                             <?php } ?>

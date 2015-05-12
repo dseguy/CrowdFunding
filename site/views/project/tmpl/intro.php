@@ -13,7 +13,7 @@ defined('_JEXEC') or die;
 if (!empty($this->article)) {
 
     if ($this->params->get("project_intro_article_title", 0)) {
-        echo "<h2>".$this->escape($this->article->title)."</h2>";
+        echo "<h2>",$this->escape($this->article->title),"</h2>";
     }
 
     echo $this->article->introtext;

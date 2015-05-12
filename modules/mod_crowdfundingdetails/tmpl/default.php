@@ -15,7 +15,7 @@ defined('_JEXEC') or die;
         <?php if ($project->getId()) { ?>
             <li>
                 <div class="thumbnail cf-project">
-                    <img src="<?php echo $imageFolder . "/" . $project->getImage(); ?>" alt="<?php echo htmlspecialchars($project->getTitle(), ENT_QUOTES, "UTF-8"); ?>" width="<?php echo $imageWidth; ?>" height="<?php echo $imageHeight; ?>">
+                    <img src="<?php echo $imageFolder , "/" , $project->getImage(); ?>" alt="<?php echo htmlspecialchars($project->getTitle(), ENT_QUOTES, "UTF-8"); ?>" width="<?php echo $imageWidth; ?>" height="<?php echo $imageHeight; ?>">
                     <div class="caption">
                         <h3>
                             <a href="<?php echo JRoute::_(CrowdFundingHelperRoute::getDetailsRoute($project->getSlug(), $project->getCatSlug())); ?>">

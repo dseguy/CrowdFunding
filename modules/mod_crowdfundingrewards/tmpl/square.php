@@ -77,7 +77,7 @@ $height = $componentParams->get("rewards_image_square_height", 50);
                     if ($params->get("display_delivery_date", 0)) {
                         $deliveryDate = new ITPrismValidatorDate($reward["delivery"]);
                         if ($deliveryDate->isValid()) {
-                            echo '<div class="cf-rewards-delivery">' . JText::sprintf("MOD_CROWDFUNDINGREWARDS_ESTIMATED_DELIVERY", JHtml::_('date', $reward["delivery"], JText::_('DATE_FORMAT_LC3'))). '</div>';
+                            echo '<div class="cf-rewards-delivery">' , JText::sprintf("MOD_CROWDFUNDINGREWARDS_ESTIMATED_DELIVERY", JHtml::_('date', $reward["delivery"], JText::_('DATE_FORMAT_LC3'))), '</div>';
                         }
                     }?>
                 <?php } ?>

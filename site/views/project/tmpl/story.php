@@ -45,7 +45,7 @@ echo $layout->render($this->layoutData);
             <span class="help-block">(PNG, JPG, or GIF - <?php echo $this->pWidth; ?> x <?php echo $this->pHeight; ?> pixels) </span>
             
             <?php if(!empty($this->pitchImage)) {?>
-            <img src="<?php echo $this->imageFolder."/".$this->pitchImage;?>" class="img-polaroid" />
+            <img src="<?php echo $this->imageFolder,"/",$this->pitchImage;?>" class="img-polaroid" />
             <?php if(!$this->debugMode) {?>
             <div class="clearfix">&nbsp;</div>
         	<a href="<?php echo JRoute::_("index.php?option=com_crowdfunding&task=story.removeImage&id=".$this->item->id."&".JSession::getFormToken()."=1");?>" class="btn btn-mini btn-danger">

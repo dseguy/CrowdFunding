@@ -40,7 +40,7 @@ $socialProfiles = $displayData["socialProfiles"];
                              alt="<?php echo $this->escape($item->title); ?>" width="<?php echo $params->get("image_width", 200); ?>"
                              height="<?php echo $params->get("image_height", 200); ?>" />
                     <?php } else { ?>
-                        <img src="<?php echo $displayData["imageFolder"] . "/" . $item->image; ?>"
+                        <img src="<?php echo $displayData["imageFolder"] , "/" , $item->image; ?>"
                              alt="<?php echo $this->escape($item->title); ?>" width="<?php echo $params->get("image_width", 200); ?>"
                              height="<?php echo $params->get("image_height", 200); ?>" />
                     <?php } ?>

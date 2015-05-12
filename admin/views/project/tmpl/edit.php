@@ -24,7 +24,7 @@ defined('_JEXEC') or die;
 
             <div class="span6">
                 <?php if (!empty($this->item->image)) { ?>
-                    <img src="<?php echo $this->imagesUrl . "/" . $this->item->image; ?>"/>
+                    <img src="<?php echo $this->imagesUrl , "/" , $this->item->image; ?>"/>
 
                     <div class="clearfix"></div>
                     <br/>
@@ -56,7 +56,7 @@ defined('_JEXEC') or die;
 
             <div class="span6">
                 <?php if (!empty($this->item->pitch_image)) { ?>
-                    <img src="<?php echo $this->imagesUrl . "/" . $this->item->pitch_image; ?>"/>
+                    <img src="<?php echo $this->imagesUrl , "/" , $this->item->pitch_image; ?>"/>
 
                     <div class="clearfix"></div>
                     <br/>

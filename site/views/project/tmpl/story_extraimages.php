@@ -30,7 +30,7 @@ defined('_JEXEC') or die;
     ?>
     <div class="row-fluid extra-image-row">
         <div class="span10">
-            <img src="<?php echo $this->extraImagesUri."/".$extraImage->thumb;?>" />
+            <img src="<?php echo $this->extraImagesUri,"/",$extraImage->thumb;?>" />
         </div>
         <div class="span2">
             <a href="javascript: void(0);" class="btn btn-danger js-extra-image-remove" data-image-id="<?php echo (int)$extraImage->id; ?>">

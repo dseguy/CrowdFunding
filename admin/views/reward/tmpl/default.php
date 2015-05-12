@@ -83,7 +83,7 @@ defined('_JEXEC') or die;
                         <p><?php echo $this->escape($this->item->description); ?></p>
 
                         <?php if (!empty($this->item->image)) { ?>
-                        <img src="../<?php echo $this->imagesFolder . "/".$this->item->image_thumb; ?>" />
+                        <img src="../<?php echo $this->imagesFolder , "/",$this->item->image_thumb; ?>" />
                         <?php } ?>
                     </td>
                 </tr>

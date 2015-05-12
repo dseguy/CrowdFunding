@@ -74,7 +74,7 @@ defined('_JEXEC') or die;?>
                         <p><?php echo $this->escape($this->reward->getDescription()); ?></p>
 
                         <?php if ($this->reward->getImage()) { ?>
-                            <img src="../<?php echo $this->imagesFolder . "/".$this->reward->getImageThumbnail(); ?>" />
+                            <img src="../<?php echo $this->imagesFolder , "/",$this->reward->getImageThumbnail(); ?>" />
                         <?php } ?>
                     </td>
                 </tr>

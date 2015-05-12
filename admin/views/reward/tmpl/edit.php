@@ -74,7 +74,7 @@ defined('_JEXEC') or die;
     <?php if (!empty($this->item->id) and !empty($this->item->image)) { ?>
         <div class="span6">
             <div class="thumbnail">
-                <img src="<?php echo $this->rewardsImagesUri . "/" . $this->item->image; ?>"/>
+                <img src="<?php echo $this->rewardsImagesUri , "/" , $this->item->image; ?>"/>
             </div>
 
             <div class="clearfix"></div>

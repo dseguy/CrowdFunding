@@ -36,7 +36,7 @@ $itemSpan = (!empty($this->subcategoriesPerRow)) ? round(12 / $this->subcategori
                         <?php
                         if ($this->displayProjectsNumber) {
                             $number = (!isset($this->projectsNumber[$item->id])) ? 0 : $this->projectsNumber[$item->id][0];
-                            echo "( ". $number . " )";
+                            echo "( ", $number , " )";
                         } ?>
                     </h3>
                     <?php
